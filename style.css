@@ -1,0 +1,65 @@
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --Light-Red: hsl(0, 100%, 67%);
+}
+
+.main{
+    margin-left: 40px;
+}
+
+.form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.input-controller, .input-label, .input-field{
+    display: block;
+}
+
+.input-controller, .input-field{
+    width: 70%;
+    font-size: 32px;
+}
+
+.input-field{
+    border-style: solid;
+    border-color: black;
+    outline-color:black;
+    width: 100%;
+}
+
+
+.borderline{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+
+.img{
+    background-color: var(--Purple);
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    padding: 10px;
+}
+
+.age-year,.age-month,.age-day{
+    display: block;
+    font-size: 96px;
+}
+
+.purple{
+    color:  var(--Purple) ;
+}
+
+.error{
+    color: var(--Light-Red);
+    font-size: 16px;
+}
