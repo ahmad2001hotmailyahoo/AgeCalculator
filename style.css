@@ -55,6 +55,12 @@ body{
     outline-color:var(--Smokey-Grey);
     border-width: 0.1px;
     width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-field::placeholder{
+    font-weight: bold;
 }
 
 
@@ -92,7 +98,19 @@ body{
 }
 
 @media only screen and (max-width:550px) {
-    .age-year,.age-month,.age-day{
+    .age-year,.age-month,.age-day {
         font-size: 64px;
+    }
+    .input-controller, .input-field, .error {
+        font-size: 14px;
+    }
+    .form{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .age-year,.age-month,.age-day{
+        font-size: 32px;
     }
 }
