@@ -116,7 +116,6 @@ function getAge(
 
     }
 		setDate(day ,month ,year)
-
   }
 }
 
@@ -147,7 +146,6 @@ function ageExtractor(e) {
       else setError("error-day", "");
     } 
 		if (dateObject["month"] == '') {
-      alert(123)
       setError("error-month", "This field must not be empty")
     }
 		else {
