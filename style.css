@@ -7,6 +7,8 @@
 :root{
     --Purple: hsl(259, 100%, 65%);
     --Light-Red: hsl(0, 100%, 67%);
+    --Smokey-Grey: hsl(0, 1%, 44%);
+    --Off-Black: hsl(0, 0%, 8%);
 }
 
 .main{
@@ -26,13 +28,14 @@
 
 .input-controller, .input-field{
     width: 70%;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .input-field{
     border-style: solid;
-    border-color: black;
-    outline-color:black;
+    border-color: var(--Smokey-Grey);
+    outline-color:var(--Smokey-Grey);
+    border-width: 0.1px;
     width: 100%;
 }
 
@@ -44,8 +47,8 @@
 
 .line{
     width: 80%;
-    height: 1px;
-    background-color: black;
+    height: 0.1px;
+    background-color: var(--Off-Black);
 }
 
 .img{
