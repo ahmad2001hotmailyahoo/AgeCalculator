@@ -9,10 +9,28 @@
     --Light-Red: hsl(0, 100%, 67%);
     --Smokey-Grey: hsl(0, 1%, 44%);
     --Off-Black: hsl(0, 0%, 8%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100% - 10px);
+}
+
+body{
+    background: var(--Light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main{
-    margin-left: 40px;
+    background: var(--Off-white);
+    border-bottom-right-radius: 40px;
+    padding: 35px;
 }
 
 .form{
@@ -71,4 +89,10 @@
 .error{
     color: var(--Light-Red);
     font-size: 16px;
+}
+
+@media only screen and (max-width:550px) {
+    .age-year,.age-month,.age-day{
+        font-size: 64px;
+    }
 }
